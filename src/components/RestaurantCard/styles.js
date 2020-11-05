@@ -24,6 +24,7 @@ export const RestaurantPhoto = styled.img`
   height: 100px;
   border-radius: 6px;
   object-fit: cover;
+  display: ${(props) => (props.imageLoader ? 'block' : 'none')};
 `;
 
 export const Title = styled.span`
@@ -37,7 +38,7 @@ export const Title = styled.span`
 
 export const Address = styled(Title)`
   line-height: 19px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   margin-top: 2px;
 `;
